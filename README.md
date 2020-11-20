@@ -37,6 +37,25 @@ The COVID related dataset only contains Tweet ID's. To extract the rest of the f
 
 Next, we need to convert the text to a numerical representation called a feature vector, which we obtained using Google's BERT.
 
+## Classification 
+To classify a given Tweet as COVID or non-COVID, we first need to do feature extraction. We combined domain-specific features from pre-defined custom dictionaries based on our own intution (e.g. COVID, Coronavirus, Death) with BERT-based features. In total, we had 773 features, 5 from the custom dictionaries we defined and 768 from BERT.
+
+We used the following classifiers to train our model:
+- Random Forest
+- Naive Bayes
+- Support Vector Machines
+- Artificial Neural Network
+
+## Topic modelling - LDA
+Topic modeling is a type of statistical modeling for discovering abstract topics that may occur within a text, which can help us to understand, organize, and summarize data of a large collection of text. We used Latent Dirichlet Allocation to build our topic model. LDA builds a topic per document model and words per topic model, modeled as Dirichlet distributions whereeach word has a relative weight.LDA is a matrix factorization technique. We make use of Python NLTK, WordNet,Gensim LDAModel on our COVID Tweet Dataset to achieve our objective.
+
+To perform LDA on our dataset, extensive data pre-processing has been done:
+- Tokenization: Split the text into sentences and the sentences into words. Lowercase the words and remove punctuation.
+- Words that have fewer than 3 characters are removed
+- All stopwords are removed
+- Words are lemmatized — words in third person are changed to first person and verbs in past and future tensesare changed into present.
+- Words are stemmed — words are reduced to their root form.
+
 ## References
 [1] Emily Chen, Kristina Lerman, Emilio Ferrara. Tracking Social Media Discourse About the COVID-19 Pandemic:Development of a Public Coronavirus Twitter Data.In InJMIR Public Health Surveill 2020;6(2):e19273,2020.
 
