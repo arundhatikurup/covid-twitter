@@ -30,13 +30,27 @@ Twitter has emerged as an important platform for online COVID-19 discourse. As a
 - Append a target column for supervised classification (0 for non-COVID, 1 for COVID)
 - COVID Dataset has 34 columns including  timestamp,  tweet_url,  hashtag,  lang,  hashtags,  urls,  fa-vorite_count, id, source, retweet_count, retweet_id, retweet_screen_name, possibly_sensitive, place, user_created_at,user_screen_name,    user_default_profile_image,    user_description,    user_favorites_count,    user_friends_count,user_listed_count,  user_location,  user_name,  user_screen_name,  user_statuses_count,  user_time_zone,  user_urls,user_verified, in_reply_to_screen_name, in_reply_to_status_id,in_reply_to_user_id and text.
 
+
+
 ## Pre-Processing
 The COVID related dataset only contains Tweet ID's. To extract the rest of the features of the Tweets, we used an open source hydrator tool.  Many irrelevant columns were dropped, because we were analyzing textual discourse. Tweet content also had to be cleaned up by removing URL's, emojis, and mentions.
 
 Next, we need to convert the text to a numerical representation called a feature vector, which we obtained using Google's BERT.
 
+## References
+[1] Emily Chen, Kristina Lerman, Emilio Ferrara. Tracking Social Media Discourse About the COVID-19 Pandemic:Development of a Public Coronavirus Twitter Data.In InJMIR Public Health Surveill 2020;6(2):e19273,2020.
 
+[2]Karishma Sharma, Sungyong Seo, Chuizheng Meng, Sirisha Rambhatla, Yan Liu.  Covid-19 on Social Media:Analyzing Misinformation COVID-19 on Social Media: Analyzing Misinformation. InarXiv:2003.12309 [cs.SI]
 
+[3]Laure Delisle, A.Berker, A.Kalaitzis, K.Majewski, J.Cornebise, M.Martin. A large-scale crowd-sourced analysis ofabuse against women journalists and politicians on Twitter. InNeurIPS- AI For Social Good Workshop, 2018.
+
+[4]  Twitter, Inc.Q1 2020: Twitter’s Letter to Stakeholders.[5]Jacob Devlin, Ming-Wei Chang, Kenton Lee, Kristina Toutanova.  BERT: Pre-training of Deep BidirectionalTransformers forLanguage UnderstandingGoogle AI Language, 2018.
+
+[6]  https://github.com/echen102/COVID-19-TweetIDs
+
+[7]  https://www.kaggle.com/kazanova/sentiment140
+
+[8]  https://en.wikipedia.org
 
 
 
