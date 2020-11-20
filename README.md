@@ -13,11 +13,13 @@ Twitter has emerged as an important platform for online COVID-19 discourse. As a
 
 ## Data Sources
 **COVID Related Tweets**
+
 [Source](https://github.com/echen102/COVID-19-TweetIDs)
 - Publicly reports the Tweet ID of hundreds of millions of COVID-19 related Tweets
 - Released by Ferrara et.al
 
 **Non-COVID Related Tweets**
+
 [Source](https://www.kaggle.com/kazanova/sentiment140)
 - Contains 1.6 million tweets extracted using the Twitter API
 - Annotated with values from 0 (negative) to 4 (positive) to detect sentiment
